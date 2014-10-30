@@ -1,0 +1,15 @@
+<template name="sidebar">
+    <h2>Sidebar.</h2>
+    <div class="nav nav-justified" role="nav">
+        <a class="active">Items</a>
+        <a class="">Types</a>
+        <a class="">Queries</a>
+    </div>
+    <div class="list-group">
+        {{#each items}}
+        <a href="{{pathFor 'itemPage'}}" class="list-group-item">
+            {{title}} – {{type}}
+        </a>
+        {{/each}}
+    </div>
+</template>
