@@ -1,18 +1,23 @@
 <template name="layout">
-    <div class="container-fluid">
+    <div class="container">
     <header class="row">
-        <div class="col-md-3"></div>
-        <h1 class="col-md-6"><a href="{{pathFor 'home'}}">Wiki.</a></h1>
-        <div class="col-md-3">{{> loginButtons}}</div>
+        <div class="col c3">
+            &nbsp;
+        </div><h1 class="col c6">
+            <a href="{{pathFor 'home'}}">bitraten.</a>
+        </h1><div class="col c3">
+            {{> loginButtons}}
+        </div>
     </header>
     <div class="row">
-        <aside class="col-md-3">
-            {{> sidebar}}
-        </aside>
-        <div class="col-md-9">
-            <h1>Welcome to the wiki!</h1>
+        <aside class="col c3 left">
+            &nbsp;
+            {{> yield "left"}}
+        </aside><main class="col c6">
             {{> yield}}
-        </div>
+        </main><aside class="col c3 right">
+            {{> yield "right"}}
+        </aside>
     </div>
     </div>
 </template>

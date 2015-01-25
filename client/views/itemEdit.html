@@ -1,0 +1,20 @@
+<template name="itemEdit">
+    <form>
+    <label for="title">Title:</label><br /><input type="text" name="title" id="title" value="{{title}}" />
+    <p><textarea name="content" rows="15">{{content}}</textarea></p>
+    <fieldset>
+        <legend>Params</legend>
+        {{#each params}}
+            <p class="param">
+                <label class="key">{{key}}</label><br />
+                <input type="text" class="value" value="{{content}}" /> <i class="fa fa-minus fa-lg del-param"></i>
+            </p>
+        {{/each}} 
+        <p><input type="text" name="new-param" class="value" placeholder="Key…" /> <i class="fa fa-plus fa-lg add-param"></i></p>
+    </fieldset>
+    <p class="buttons">
+        <input type="button" class="cancel-button" value="Cancel" />
+        <input type="submit" />
+    </p>
+    </form>
+</template>

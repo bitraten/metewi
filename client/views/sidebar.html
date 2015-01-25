@@ -1,15 +1,10 @@
 <template name="sidebar">
-    <h2>Sidebar.</h2>
-    <div class="nav nav-justified" role="nav">
+    <h3>Sidebar.</h3>
+    <nav>
         <a class="active">Items</a>
-        <a class="">Types</a>
-        <a class="">Queries</a>
-    </div>
-    <div class="list-group">
-        {{#each items}}
-        <a href="{{pathFor 'itemPage'}}" class="list-group-item">
-            {{title}} – {{type}}
-        </a>
-        {{/each}}
-    </div>
+        <a>Types</a>
+        <a>Queries</a>
+    </nav>
+    {{#if mayEdit}}<p><input type="text" class="add-item" placeholder="Add item…" /></p>{{/if}}
+    <p><input type="text" placeholder="Search…" /></p>
 </template>

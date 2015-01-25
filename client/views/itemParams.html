@@ -1,0 +1,8 @@
+<template name="itemParams">
+    {{#if mayEdit}}<a href="{{pathFor 'item.edit'}}"><i class="fa fa-pencil-square-o"></i></a>{{/if}}
+    <dl>
+    {{#each params}}
+        <dt class="key">{{key}}</dt><dd class="value">{{content}}</dd>
+    {{/each}}
+    </dl>
+</template>

@@ -1,0 +1,35 @@
+.container {
+    margin: 0 20px;
+    width: auto;
+}
+
+@media(min-width:1310px) {
+    .container {
+        margin: auto;
+        width: 1270px;
+    }
+}
+
+.row {
+    margin: 1% 0;
+}
+
+.col {
+    display: inline-block;
+    margin: 0 1%;
+    vertical-align: top;
+}
+
+.c6 {
+    width: 48%;
+}
+
+.c3 {
+    width: 23%;
+}
+
+@media(max-width:870px) {
+    .row .col {
+        width: 100%;
+    }
+}

@@ -1,3 +1,4 @@
 <template name="itemPage">
-    {{title}} – {{type}}
+    <h2><a href="{{pathFor 'item.show'}}">{{title}}</a></h2>
+    <article>{{#markdown}}{{content}}{{/markdown}}</article>
 </template>
