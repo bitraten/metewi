@@ -3,9 +3,24 @@
 # 'meteor add' and 'meteor remove' will edit this file for you,
 # but you can also edit it by hand.
 
-meteor-platform
 iron:router
-accounts-google
-accounts-ui
-markdown
+accounts-google@1.0.10
+accounts-ui@1.1.9
+markdown@1.0.10
 meteorhacks:fast-render
+meteor-base
+mobile-experience
+mongo
+blaze-html-templates
+session
+jquery
+tracker
+logging
+reload
+random
+ejson
+spacebars
+check
+standard-minifier-css
+standard-minifier-js
+shell-server
